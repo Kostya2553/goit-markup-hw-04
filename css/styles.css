@@ -8,7 +8,7 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
-  --secondary-color: ;
+  --secondary-color: #757575;
 }
 h1,
 h2,
@@ -161,7 +161,6 @@ img {
 
   text-transform: uppercase;
   color: #ffffff;
-  background: #2f303a;
 
   display: flex;
   align-items: center;
@@ -173,10 +172,11 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4))
+    url('/images/index/hero/bg.jpg');
+  background-size: cover;
 }
 .about-1 {
-  background-color: #2f303a;
-  background-image: url();
 }
 /*============ ABOUT 1 END ============*/
 
@@ -285,6 +285,7 @@ img {
 
 .about-3 {
   background: #f5f4fa;
+  flex: shrink 0;
 }
 
 /*============ ABOUT 3 END ============*/
