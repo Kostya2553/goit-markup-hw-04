@@ -214,6 +214,7 @@ img {
 }
 
 .about2-list {
+  flex-wrap: wrap;
   align-items: center;
   display: flex;
   margin-top: 30px;
