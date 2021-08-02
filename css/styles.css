@@ -289,6 +289,29 @@ img {
 }
 
 /*============ ABOUT 3 END ============*/
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 372px;
+  font-family: var(--main-font);
+  margin-top: 94px;
+}
+.div-client-list .h2-clent-list {
+  position: absolute;
+  width: 390px;
+  height: 42px;
+  left: 606px;
+  top: 2401px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 0.85;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
 
 /*============ FOOTER ============*/
 .logo-footer {
