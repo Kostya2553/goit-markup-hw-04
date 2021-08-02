@@ -287,6 +287,10 @@ img {
   background: #f5f4fa;
   flex: shrink 0;
 }
+.svg-group {
+  display: flex;
+  text-align: center;
+}
 
 /*============ ABOUT 3 END ============*/
 .client-list {
@@ -298,12 +302,6 @@ img {
   margin-top: 94px;
 }
 .div-client-list .h2-clent-list {
-  position: absolute;
-  width: 390px;
-  height: 42px;
-  left: 606px;
-  top: 2401px;
-
   font-weight: bold;
   font-size: 36px;
   line-height: 0.85;
@@ -311,6 +309,10 @@ img {
   letter-spacing: 0.03em;
 
   color: #212121;
+}
+.svg-client {
+  display: flex;
+  text-align: center;
 }
 
 /*============ FOOTER ============*/
