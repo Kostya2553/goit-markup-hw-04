@@ -8,7 +8,7 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
-  --secondary-color: #757575;
+  --secondary-color: ;
 }
 h1,
 h2,
@@ -59,7 +59,7 @@ img {
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 26px;
-  line-height: 11.9;
+  line-height: 0.7;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #212121;
@@ -94,29 +94,32 @@ img {
   margin-right: 50px;
 }
 .contact-link-adres {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-right: 50px;
 }
 .contact-link-adres:hover,
 .contact-link-adres:focus {
   color: var(--accent-color);
 }
-.svg-num {
-  height: 16px;
-  width: 10px;
-  color: #757575;
-}
-.svg-adres {
-  height: 12px;
+.svg-mail {
   width: 16px;
-  color: #757575;
+  height: 12px;
+  margin-right: 10px;
 }
-
+.svg-mail:hover,
+.svg-mail:focus {
+  color: var(--accent-color);
+}
 .contact-link-num {
+  display: flex;
+  align-items: center;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
@@ -128,7 +131,15 @@ img {
 .contact-link-num:focus {
   color: var(--accent-color);
 }
-
+.svg-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.svg-phone:hover,
+.svg-phone:focus {
+  color: var(--accent-color);
+}
 /*============ HEADER END ============*/
 
 /*============ ABOUT 1 ============*/
@@ -176,17 +187,35 @@ img {
   margin-left: auto;
 }
 .first-phrase {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
-  background-image: url('/images/index/hero/bg.jpg');
-  background-size: cover;
 }
 .about-1 {
+  display: flex;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/hero/bg.jpg);
 }
 /*============ ABOUT 1 END ============*/
 
 /*============ ABOUT 2 ============*/
+.svg-exp-list {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.div-exp {
+  height: 120px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 .head-lines {
   font-family: var(--main-font);
   font-weight: bold;
@@ -197,6 +226,8 @@ img {
   align-items: center;
   display: flex;
   margin-right: 30px;
+}
+.explanation {
   padding-top: 94px;
 }
 
@@ -220,21 +251,21 @@ img {
 }
 
 .about2-list {
-  flex-wrap: wrap;
   align-items: center;
   display: flex;
-  margin-top: 30px;
   margin-left: 30px;
 }
 
 /*============ ABOUT 2 END ============*/
 
 /*============ ABOUT 3 ============*/
+.do {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .do-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
-  padding-bottom: 94px;
   justify-content: space-between;
 }
 .div-do-list {
@@ -247,15 +278,13 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .group-ul {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  padding-bottom: 94px;
 }
 .group-li {
   margin-left: 30px;
@@ -291,23 +320,36 @@ img {
 
 .about-3 {
   background: #f5f4fa;
-  flex: shrink 0;
+  padding-bottom: 94px;
 }
-.svg-group {
+.svg-link {
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+.div-group {
   display: flex;
-  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ul-svg {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 44px;
+}
+.svg-a {
+  border-radius: 50px;
+  background-color: rgb(255, 0, 0);
 }
 
 /*============ ABOUT 3 END ============*/
-.client-list {
+.klient {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  height: 372px;
-  font-family: var(--main-font);
-  margin-top: 94px;
 }
-.div-client-list .h2-clent-list {
+.h2-klient {
+  text-align: center;
+  font-family: var(--main-font);
   font-weight: bold;
   font-size: 36px;
   line-height: 0.85;
@@ -315,12 +357,28 @@ img {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
-.svg-client {
+.ul-klient {
   display: flex;
-  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 94px;
 }
-
+.ul-klient:not(:last-child) {
+  margin-right: 30px;
+}
+.li-klient {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.svg-klient {
+  width: 106px;
+  height: 60px;
+}
 /*============ FOOTER ============*/
 .logo-footer {
   font-family: var(--main-font);
@@ -364,10 +422,11 @@ img {
 
 .beck-footer {
   background: #2f303a;
-}
-.div-foot {
+
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.div-foot {
 }
 .footer-li {
   margin-bottom: 9px;
@@ -380,6 +439,9 @@ img {
 /*============ PARTFOLIO.HTML ============*/
 
 /*============ NAV BTN ============*/
+.header-partfolio {
+  border: 1px solid #ececec;
+}
 .btn-list {
   font-family: var(--main-font);
   font-weight: 500;
@@ -395,6 +457,8 @@ img {
 
   margin-right: 8px;
   border: transparent;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 .btn-list:hover,
 .btn-list:focus {
@@ -448,8 +512,6 @@ img {
 .photo-item {
   margin-left: 30px;
   margin-top: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
