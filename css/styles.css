@@ -108,15 +108,17 @@ img {
 .contact-link-adres:focus {
   color: var(--accent-color);
 }
+.contact-link-adres:hover.svg-mail,
+.contact-link-adres:focus.svg-mail {
+  color: var(--accent-color);
+}
+
 .svg-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.svg-mail:hover,
-.svg-mail:focus {
-  color: var(--accent-color);
-}
+
 .contact-link-num {
   display: flex;
   align-items: center;
@@ -272,6 +274,8 @@ img {
   background: #ffffff;
 }
 .page-what-group {
+  display: flex;
+  justify-content: center;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 36px;
@@ -322,11 +326,9 @@ img {
   background: #f5f4fa;
   padding-bottom: 94px;
 }
-.svg-link {
-  align-items: center;
+.svg-icon {
   width: 20px;
   height: 20px;
-  margin: auto;
 }
 .div-group {
   display: flex;
@@ -336,16 +338,26 @@ img {
 .ul-svg {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
 }
 .svg-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50px;
-  background-color: rgb(255, 0, 0);
+}
+.svg-a:hover,
+.svg-a:focus {
+  background-color: #2196f3;
+}
+.svg-a:hover .svg-icon {
+  fill: #ffffff;
 }
 
 /*============ ABOUT 3 END ============*/
 .klient {
-  display: flex;
 }
 .h2-klient {
   text-align: center;
@@ -365,20 +377,28 @@ img {
   justify-content: space-evenly;
   margin-bottom: 94px;
 }
-.ul-klient:not(:last-child) {
-  margin-right: 30px;
-}
+
 .li-klient {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
 }
 .svg-klient {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
 }
+.a-klient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.a-klient:hover .svg-klient {
+  fill: #2196f3;
+}
+
 /*============ FOOTER ============*/
 .logo-footer {
   font-family: var(--main-font);
@@ -431,7 +451,33 @@ img {
 .footer-li {
   margin-bottom: 9px;
 }
+.footer-ul-svg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-h2 {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+}
+.footer-svg-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.1);
+}
+.footer-svg-a:hover,
+.footer-svg-a:focus {
+  background-color: #2196f3;
+}
 /*============ FOOTER END ============*/
 
 /*============ INDEX.HTML END ============*/
