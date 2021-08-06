@@ -207,8 +207,6 @@ img {
 .svg-exp-list {
   margin-top: 25px;
   margin-bottom: 25px;
-  width: 70px;
-  height: 65px;
 }
 .div-exp {
   height: 120px;
@@ -331,6 +329,7 @@ img {
 .svg-icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
 }
 .div-group {
   display: flex;
@@ -449,14 +448,19 @@ img {
   padding-bottom: 60px;
 }
 .div-foot {
+  display: flex;
 }
 .footer-li {
   margin-bottom: 9px;
 }
 .footer-ul-svg {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
+.footer-li-svg {
+}
+
 .footer-h2 {
   font-family: var(--main-font);
   font-weight: bold;
@@ -478,7 +482,7 @@ img {
 }
 .footer-svg-a:hover,
 .footer-svg-a:focus {
-  background-color: #2196f3;
+  fill: #2196f3;
 }
 /*============ FOOTER END ============*/
 
