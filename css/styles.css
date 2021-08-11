@@ -108,7 +108,8 @@ img {
 .contact-link-adres:focus {
   color: var(--accent-color);
 }
-.contact-link-adres:hover.svg-mail {
+.contact-link-adres:hover .svg-mail,
+.contact-link-adres:focus .svg-mail {
   fill: #2196f3;
 }
 
@@ -133,6 +134,11 @@ img {
 .contact-link-num:focus {
   color: var(--accent-color);
 }
+.contact-link-num:hover .svg-phone,
+.contact-link-num:focus .svg-phone {
+  fill: #2196f3;
+}
+
 .svg-phone {
   width: 10px;
   height: 16px;
@@ -336,10 +342,11 @@ img {
 }
 .ul-svg {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
-.svg-a {
+.ul-svg .svg-a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,11 +354,16 @@ img {
   height: 44px;
   border-radius: 50px;
 }
+.svg-a:nth-last-child(1) {
+  margin-right: 10px;
+}
+
 .svg-a:hover,
 .svg-a:focus {
   background-color: #2196f3;
 }
-.svg-a:hover .svg-icon {
+.svg-a:hover .svg-icon,
+.svg-a:focus .svg-icon {
   fill: #ffffff;
 }
 
@@ -394,7 +406,13 @@ img {
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
-.a-klient:hover .svg-klient {
+.a-klient:hover,
+.a-klient:focus {
+  fill: #2196f3;
+}
+
+.a-klient:hover .svg-klient,
+.a-klient:focus .svg-klient {
   fill: #2196f3;
 }
 
@@ -482,18 +500,24 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50px;
+
   background-color: rgba(255, 255, 255, 0.1);
 }
+.footer-svg-a:nth-last-child(1) {
+  margin-right: 10px;
+}
+
 .svg-icon-footer {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 .footer-svg-a:focus,
 .footer-svg-a:hover {
   background-color: #2196f3;
 }
-.footer-svg-a:hover .svg-icon-footer {
+.footer-svg-a:hover .svg-icon-footer,
+.footer-svg-a:focus .svg-icon-footer {
   fill: #ffffff;
 }
 /*============ FOOTER END ============*/
@@ -521,6 +545,8 @@ img {
 
   margin-right: 8px;
   border: transparent;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
 }
@@ -550,6 +576,12 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.div-photo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .photo-second-name-list {
   font-family: var(--main-font);
   font-style: normal;
@@ -559,10 +591,6 @@ img {
   /* identical tobox height, or 187% */
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 4px;
-  margin-bottom: 20px;
 }
 .photo-name-list {
   font-family: var(--main-font);
@@ -572,9 +600,6 @@ img {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: #212121;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 20px;
 }
 .photo-list {
   display: flex;
