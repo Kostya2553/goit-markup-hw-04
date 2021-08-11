@@ -278,14 +278,13 @@ img {
   background: #ffffff;
 }
 .page-what-group {
-  display: flex;
-  justify-content: center;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 .group-ul {
@@ -338,6 +337,7 @@ img {
 .div-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 .ul-svg {
@@ -409,6 +409,7 @@ img {
 .a-klient:hover,
 .a-klient:focus {
   fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .a-klient:hover .svg-klient,
